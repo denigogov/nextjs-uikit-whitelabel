@@ -1,0 +1,3 @@
+[submodule "src/whitelabel"]
+	path = src/whitelabel
+	url = git@github.com:denigogov/whitelabel.git
