@@ -1,0 +1,16 @@
+{
+  "RootLayout": {
+    "title": "Hallo Deutchland!",
+    "subcomponent": "Das ist subcomponent button",
+    "homePageButton": "Besucht  About seite"
+  },
+
+  "AboutPage": {
+    "title": "Wie Gethts!",
+    "button": "Zuruck zur homepage"
+  },
+
+  "LocalSwitcher": {
+    "label": "Sprache Auswallen"
+  }
+}
