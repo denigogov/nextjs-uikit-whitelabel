@@ -1,0 +1,16 @@
+{
+  "RootLayout": {
+    "title": "Hello world!",
+    "subcomponent": "This is subcomponent button",
+    "homePageButton": "Jump To About Page"
+  },
+
+  "AboutPage": {
+    "title": "Hello world!",
+    "button": "Return to homepage"
+  },
+
+  "LocalSwitcher": {
+    "label": "Change Language"
+  }
+}

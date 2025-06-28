@@ -47,6 +47,7 @@ $screenSizeMap: (
  * Typography
  */
 $fontSizeMap: (
+  xxxsmall: 0.5rem,
   xxsmall: 0.75rem,
   xsmall: 0.875rem,
   default: 1rem,
@@ -98,10 +99,10 @@ $spacingMap: (
 @function breakpoint($key) {
   @return map.get($screenSizeMap, $key);
 }
-@function fontsize($key) {
+@function fontSize($key) {
   @return map.get($fontSizeMap, $key);
 }
-@function fontweight($key) {
+@function fontWeight($key) {
   @return map.get($fontWeightMap, $key);
 }
 @function spacing($key) {
