@@ -7,13 +7,14 @@ interface HomePageProps {
     locale: string;
   };
 }
-const token = process.env.STRAPI_API_TOKEN;
 
 export default async function HomePage({ params }: HomePageProps) {
   const { locale } = params;
 
-  const page = await getPageByUrl(locale, "/");
   const t = await getTranslations("RootLayout");
+
+  const { page } = await getPageByUrl("/", locale);
+
   const components = page?.components || [];
 
   return (

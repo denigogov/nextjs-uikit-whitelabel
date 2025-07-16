@@ -11,11 +11,11 @@ interface PageProps {
 }
 
 export default async function DynamicPage({ params }: PageProps) {
-  const { locale, slug = [] } = params;
+  const { locale, slug = [] } = await params;
 
   const path = "/" + (slug?.join("/") ?? "");
 
-  const page = await getPageByUrl(locale, path);
+  const { page } = await getPageByUrl(path, locale);
   const components = page?.components || [];
 
   if (!page) {

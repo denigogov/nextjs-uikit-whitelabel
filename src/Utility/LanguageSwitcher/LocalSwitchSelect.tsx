@@ -22,6 +22,10 @@ export default function LocaleSwitcherSelect({
   function onSelectChange(event: React.ChangeEvent<HTMLSelectElement>) {
     const nextLocale = event.target.value;
 
+    console.log(
+      "LOGIC FOR DYNAMICLY CHANGE PARAM WILL BE IN LOCALSWITCHER SELECT I WILL BUILD DYNAMICLY BASE ON PATHNAME AND PARAMS WE WILL FETCH ALL DATA FROM THE DATA AND BASE ON THAT WE WILL RENAME THE URL 'MANUEL'"
+    );
+
     router.replace(
       // @ts-expect-error -- TypeScript will validate that only known `params`
       { pathname, params },
