@@ -1,11 +1,11 @@
 import { notFound } from "next/navigation";
 
-const TOKEN = process.env.STRAPI_API_TOKEN;
-const URL = process.env.STRAPI_URL;
+const TOKEN = process.env.STRAPI_TOKEN;
+const URL = process.env.NEXT_PUBLIC_STRAPI_URL;
 
 export async function getPageByUrl(url: string, locale?: string) {
-  if (!locale || !url) {
-    throw new Error("Locale or Url not provided");
+  if (!url) {
+    throw new Error("Url not provided");
   }
 
   try {
